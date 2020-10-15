@@ -1,0 +1,37 @@
+h1{
+text-align: center;
+}
+
+img {
+    animation-name: ball;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display:block;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;  
+    
+}
+
+img:last-child {
+    animation-name: vint;        
+}
+
+@keyframes ball {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(-360deg);
+    }
+}
+
+@keyframes vint {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
